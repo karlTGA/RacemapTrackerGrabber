@@ -4,9 +4,9 @@ Small program that load tracker from racemap and store the state of that tracker
 
 ## Install
 
-    `git clone project_url`
-    `yarn install`
-    `yarn build`
-    `export USERNAME=[username on racemap.com]`
-    `export PASSWORD=[password on racemap.com]`
-    `yarn start`
+    git clone https://github.com/karlTGA/RacemapTrackerGrabber
+    yarn install
+    yarn build
+    export USERNAME=[username on racemap.com]
+    export PASSWORD=[password on racemap.com]
+    yarn start

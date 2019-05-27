@@ -8,19 +8,19 @@ type Props = {
 };
 
 const LoadTrackers = ({ onTrackerUpdate }: Props) => {
-  const host = process.env.HOST || "https://racemap.com";
-  const username = process.env.USERNAME;
-  if (username == null)
-    throw Error("No username was set. Set a username per env.");
-
-  const password = process.env.PASSWORD;
-  if (password == null)
-    throw Error("No password was set. Set a password per env.");
-
   const [fetchTracker, setFetch] = React.useState(false);
   const [fetchError, setFetchError] = React.useState("");
 
   const loadTrackerFromServer = async () => {
+    const host = process.env.HOST || "https://racemap.com";
+    const username = process.env.USERNAME;
+    if (username == null)
+      throw Error("No username was set. Set a username per env.");
+
+    const password = process.env.PASSWORD;
+    if (password == null)
+      throw Error("No password was set. Set a password per env.");
+
     if (!fetchTracker) {
       setFetch(true);
       setFetchError("");

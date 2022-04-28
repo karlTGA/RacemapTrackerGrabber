@@ -14,7 +14,7 @@
     "@types/ink": "^0.5.1",
     "@types/react": "^16.8.18",
     "async-csv": "^2.0.0",
-    "cross-fetch": "^3.0.2",
+    "cross-fetch": "^3.1.5",
     "ink": "^2.1.1",
     "moment": "^2.24.0",
     "react": "^16.8.6"
